@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITULO}}</title>
+<style>
+  :root {
+    --fundo: #ffffff;
+    --texto: #1a1a1a;
+    --suave: #5c5c5c;
+    --linha: #e2e2e2;
+    --link: #0b5ed7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fundo: #14161a;
+      --texto: #e8e8e8;
+      --suave: #9a9a9a;
+      --linha: #2c2f35;
+      --link: #7aa7ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 40px 16px 64px;
+    background: var(--fundo);
+    color: var(--texto);
+    font: 17px/1.6 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 680px; margin: 0 auto; }
+  h1 { font-size: 1.7rem; margin: 0 0 4px; letter-spacing: -0.01em; }
+  h2 { font-size: 1.15rem; margin: 32px 0 8px; }
+  h3 { font-size: 1rem; margin: 24px 0 6px; }
+  p { margin: 0 0 14px; }
+  a { color: var(--link); }
+  .data { color: var(--suave); font-size: 0.92rem; margin-bottom: 28px; }
+  .briefing { border-top: 1px solid var(--linha); padding-top: 8px; }
+  .anteriores { border-top: 1px solid var(--linha); margin-top: 40px; padding-top: 16px; }
+  .anteriores ul { padding-left: 20px; margin: 8px 0 0; }
+  .anteriores li { margin-bottom: 4px; }
+  footer {
+    border-top: 1px solid var(--linha);
+    margin-top: 40px;
+    padding-top: 16px;
+    color: var(--suave);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>{{TITULO}}</h1>
+  <p class="data">{{DATA}}</p>
+
+  <div class="briefing">
+    {{BRIEFING}}
+  </div>
+
+  <div class="anteriores">
+    <h2>Dias anteriores</h2>
+    {{ANTERIORES}}
+  </div>
+
+  <footer>
+    Radar montado por agentes. Toda afirmação vem com link para a fonte.
+    Opinião aparece marcada como opinião, com o nome de quem disse.
+    O que não foi conferido não entra.
+  </footer>
+
+</main>
+</body>
+</html>

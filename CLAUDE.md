@@ -53,9 +53,20 @@ Menos de três itens é aceitável em dia parado. Mais de três, nunca.
 - Nomes de jogadores e dirigentes aparecem só no contexto esportivo.
 
 **Arquivos**
-- Um briefing por dia em `briefings/AAAA-MM-DD.md`.
+- `fontes/AAAA-MM-DD.md` — anotações brutas do pesquisador, com link de cada item.
+- `verificacao/AAAA-MM-DD.md` — a conferência item a item: CONFERE, NÃO CONFERE ou NÃO ABRIU.
+- `diario/AAAA-MM-DD.md` — o briefing do dia, um arquivo por dia.
+- `index.html` — a página publicada, gerada de `modelo-index.html`.
 - Não sobrescrever briefing antigo. Correção vai como nota no próprio arquivo, com a data da correção.
+- Cada agente escreve só na sua pasta. Ninguém altera a pasta de outro.
 - RADAR.md só muda quando o dono do radar pedir.
+
+**O time**
+Os agentes estão em `.claude/agents/` e rodam nesta ordem:
+1. `pesquisador` — busca e anota em `fontes/`
+2. `verificador` — confere e relata em `verificacao/`
+3. `redator` — escreve `diario/` e gera `index.html`
+4. `guarda` — lê tudo e decide PODE PUBLICAR ou NÃO PUBLIQUE
 
 **Privacidade**
 - Não pedir nem registrar dado pessoal do dono do radar (empresa, cliente, salário, endereço).
