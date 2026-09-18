@@ -40,7 +40,7 @@ Em dia parado vem menos de três. Melhor que encher.
 
 ## Onde ler
 
-[URL do GitHub Pages]
+https://fabionakajulio-png.github.io/Agentes-Curso/
 
 ## Arquivos
 
