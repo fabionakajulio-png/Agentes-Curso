@@ -66,7 +66,10 @@ Os agentes estão em `.claude/agents/` e rodam nesta ordem:
 1. `pesquisador` — busca e anota em `fontes/`
 2. `verificador` — confere e relata em `verificacao/`
 3. `redator` — escreve `diario/` e gera `index.html`
-4. `guarda` — lê tudo e decide PODE PUBLICAR ou NÃO PUBLIQUE
+4. `municao-de-conversa` — acrescenta a seção "Munição" no fim do briefing
+5. `guarda` — lê tudo e decide PODE PUBLICAR ou NÃO PUBLIQUE
+
+O guarda é sempre o último: audita também a seção da Munição.
 
 **Privacidade**
 - Não pedir nem registrar dado pessoal do dono do radar (empresa, cliente, salário, endereço).
