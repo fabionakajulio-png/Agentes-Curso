@@ -1,0 +1,57 @@
+# Segredos e credenciais
+.env
+.env.*
+*.key
+*.pem
+*.pfx
+*.p12
+credentials*
+secrets*
+token*
+*_secret*
+*senha*
+*password*
+.claude/settings.local.json
+
+# Anotações pessoais e rascunhos
+rascunho*
+rascunhos/
+anotacoes*
+anotações*
+notas-pessoais*
+particular/
+privado/
+*.local
+*.local.*
+TODO-pessoal*
+
+# Sistema operacional
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# OneDrive / arquivos temporários do Office
+~$*
+*.tmp
+*.temp
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*~
+
+# Dependências e saídas de build
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+dist/
+build/
+
+# Logs
+*.log
+logs/
