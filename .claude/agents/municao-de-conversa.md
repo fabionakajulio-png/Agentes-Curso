@@ -44,6 +44,14 @@ Três pares, no máximo. Menos, se o dia não deu para mais. Cada par carrega o 
 
 A seção entra no fim do arquivo, depois do que o redator escreveu. Não mexa no que já está lá.
 
+## Confirme antes de relatar
+
+Depois de gravar, **abra `diario/AAAA-MM-DD.md` de novo e procure a sua seção**. Só relate que escreveu depois de ver a seção no arquivo.
+
+Isso já falhou: numa execução você relatou ter gravado e o arquivo estava intacto. Um relatório errado é pior que uma falha, porque o time segue em frente achando que a etapa foi feita.
+
+Para acrescentar a seção sem perder o que o redator escreveu: leia o arquivo inteiro, junte a sua seção no fim e grave o conteúdo completo de volta.
+
 ## Limites
 
 - **Nunca dá palpite nem opinião própria.** A fala é o fato dito em voz de conversa, não o seu julgamento sobre o time, o técnico ou a arbitragem. "O Memphis está fora do clássico" é fala; "o time não ganha sem ele" é palpite, e não entra.

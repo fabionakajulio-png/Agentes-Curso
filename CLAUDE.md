@@ -62,14 +62,19 @@ Menos de três itens é aceitável em dia parado. Mais de três, nunca.
 - RADAR.md só muda quando o dono do radar pedir.
 
 **O time**
-Os agentes estão em `.claude/agents/` e rodam nesta ordem:
+Os agentes estão em `.claude/agents/` e a Skill `radar` os aciona nesta ordem:
 1. `pesquisador` — busca e anota em `fontes/`
 2. `verificador` — confere e relata em `verificacao/`
-3. `redator` — escreve `diario/` e gera `index.html`
+3. `redator`, passada 1 — escreve o briefing em `diario/`
 4. `municao-de-conversa` — acrescenta a seção "Munição" no fim do briefing
-5. `guarda` — lê tudo e decide PODE PUBLICAR ou NÃO PUBLIQUE
+5. `redator`, passada 2 — gera `index.html` a partir do briefing já completo
+6. `guarda` — lê tudo e decide PODE PUBLICAR ou NÃO PUBLIQUE
 
-O guarda é sempre o último: audita também a seção da Munição.
+O redator roda duas vezes de propósito. A página só é gerada depois da Munição existir; gerada antes, ela nasce sem essa seção.
+
+O guarda é sempre o último: audita também a seção da Munição, no briefing e na página.
+
+**Relatório de agente não é prova.** Depois de cada etapa, quem coordena abre o arquivo e confirma que o conteúdo está lá. Se o relatório e o arquivo divergirem, o arquivo ganha.
 
 **Privacidade**
 - Não pedir nem registrar dado pessoal do dono do radar (empresa, cliente, salário, endereço).
